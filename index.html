@@ -54,16 +54,25 @@
               
             <section class="search-box">
                 <div>
-                    <label>Location</label><br>
+                    <label for="point">Location</label><br>
                     <input type="text" placeholder="Where are you going">
+
                 </div>
                 <div>
-                    <label>Date</label><br>
-                    <input type="text" placeholder="When you will go">
+                    <label for="date">Date</label><br>
+                    <input type="date" id="date" name="date" value="2024-12-20" min="2024-12-20" max="2025-12-20">
                 </div>
                 <div>
-                    <label>Guest</label><br>
-                    <input type="number" placeholder="Number of guests">
+                    <label for="guest">Guest</label><br>
+                    <select  name="guest" id="guest">
+                        <option value="">Number of guests</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                      </select>
                 </div>
                 <div>
                     <a href="explorenow.html" target="_blank" class="signup">Explore Now</a>
