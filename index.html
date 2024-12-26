@@ -4,87 +4,439 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travel Agency landing Page</title>
+    <title>TraBook Travel Agency</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-    <div>
-        <div>
-            <header>
-                <nav>
-                  <h1><img src="image/Logo.png" alt="Logo"></h1>
-              
-                  <!-- Menu Icon (Checkbox for toggling) -->
-                  
-                  <label for="menu-toggle" class="menu-icon">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                  </label>
-              
-                  <!-- Navigation Links -->
-                  <ul>
-                    <li><a href="index.html" target="_blank">Home</a></li>
-                    <li><a href="about.html" target="_blank">About</a></li>
-                    <li><a href="destinationpage.html" target="_blank">Destination</a></li>
-                    <li><a href="tour.html" target="_blank">Tour</a></li>
-                    <li><a href="blog.html" target="_blank">Blog</a></li>
-                  </ul>
-              
-                  <!-- Authentication Links -->
-                  <div class="auth-buttons">
-                    <a href="login.html" target="_blank" class="login">Login</a>
-                    <a href="signup.html" target="_blank" class="signup">Sign Up</a>
-                  </div>
-                </nav>
-              </header>
-              
-              
-              
-            
+    <div class="main-screen">
+
+        <header>
+            <img src="image/Logo.png" alt="Logo">
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#about">About </a></li>
+                    <li><a href="#Destination">Destination</a></li>
+                    <li><a href="#tour">Tour</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                </ul>
+            </nav>
+            <div class="nav-log">
+                <a href="login.html" class="login">Login</a>
+                <a href="signup.html" class="signup">Sign up</a>
+
+            </div>
+        </header>
+        <div class="med">
+            <div style="padding-top: 70px;padding-left: 20px;">
+
+                <h1 style="font-size:70px; font-family: Georgia;">Get started your <br>exciting <span
+                        style="font-size: 70px ; color:#fa7436;">journey</span><br>with us.</h1>
+                <br>
+                <p>A Team of experienced tourism professionals
+                    will <br> provide you with the best advice and tips for
+                    your <br> desire place. </p>
+                <br><br>
+                <button
+                    style="border-radius: 5px; color: #fa7436; border-color: #fa7436; background-color: transparent; padding: 8px;">Discover
+                    Now</button>
+            </div>
+            <div> <img src="image/travler.png" alt="Travel"></div>
         </div>
-        <div class="hero">
-            <div class="hero--text">
-                <h1>Get started your <br> exciting <span>journey</span> <br>with us.</h1>
-                <h2 style="font-family: Arial, Helvetica, sans-serif ;">A Team of experienced tourism professionals will <br> provide you with the best advice and tips for
-                    your <br> desire place. </h2><button type="button" onclick="document.location= 'explorenow.html' "class="btn">Discover Now</button>
-            </div><img src="image/Image.png" class="hero--image" alt="Hero Image">
+        <section class="search-box">
+            <div>
+                <label for="point">Location</label>
+                <select class="guest" name="guest" id="guest">
+                </select><br>
+                <input type="text" placeholder="where are you going">
+            </div>
+            <div>
+                <label for="date">Date</label>
+                <select class="guest" name="guest" id="guest">
+                </select><br> <input type="text" placeholder="when you will go">
+            </div>
+            <div>
+                <label for="guest">Guest</label>
+                <select class="guest" name="guest" id="guest">
+                </select><br>
+                <input type="text" placeholder="Number of guest">
+            </div>
+            <div>
+                <a id="explore" href="explorenow.html" target="_blank" class="signup">Explore Now</a>
+            </div>
+        </section>
+        <div style="padding-top: 50px; background-color: rgb(243, 243, 243);" class="sec-page">
+            <div>
 
-              
-            <section class="search-box">
-                <div>
-                    <label for="point">Location</label><br>
-                    <input type="text" placeholder="Where are you going">
+                <h1  style="font-size:40px; font-family: Georgia;">Things you Need <span
+                        style="color: #fa7436; font-size: 40px;  font-family: Georgia ;">to do</span></h1>
+                <p
+                    style="  padding-top: 20px; color:  #666 ;font-family: Poppins;font-size: 1rem;font-style: normal;font-weight: 400;line-height: 1.25rem; max-width: 25rem;min-height: 3rem;text-align: center; width: 100%;">
+                    We ensure that you'll embark on a perfectly planned , safe
+                    vacation at a price you can afford</p>
 
-                </div>
-                <div>
-                    <label for="date">Date</label><br>
-                    <input type="date" id="date" name="date" value="2024-12-20" min="2024-12-20" max="2025-12-20">
-                </div>
-                <div>
-                    <label for="guest">Guest</label><br>
-                    <select class="guest" name="guest" id="guest">
-                        <option value="">Number of guests</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                      </select>
-                </div>
-                <div>
-                    <a href="explorenow.html" target="_blank" class="signup">Explore Now</a>
-                </div>
-            </section>
-
+            </div>
+            <div><img src="image/Element.png" alt=""></div>
         </div>
-        
-   
+        <div class="sec-page-img">
+            <div>
+                <img style="padding-left: 20px; padding-top: 20px;" src="image/Group.png" alt="date">
+                <h1 style="padding-top: 50px;padding-left: 20px;">Sign up</h1>
+                <br>
+                <p style="padding-left: 20px; color:  #666 ;">completes all the work associated with planning and
+                    processing</p>
+
+            </div>
+            <div>
+                <img style="padding-left: 20px; padding-top: 20px;" src="image/Group (1).png" alt=" money">
+                <h1 style="padding-top: 50px;padding-left: 20px;">Worth of Money </h1>
+                <p style="padding-left: 20px; color:  #666 ;">After successful access then book from exclusive deals &
+                    pricing</p>
+
+            </div>
+            <div> <img style="padding-left: 20px; padding-top: 20px;" src="image/Group (2).png" alt="Location">
+                <h1 style="padding-top: 50px;padding-left: 20px;">
+                    Exciting Travel
+                </h1>
+                <p style="padding-left: 20px; color:  #666 ;">Start and explore a wide range of exciting travel
+                    experience</p>
+            </div>
+        </div>
+        <div id="Destination" style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+            <div>
+                <h1 style=" padding-top: 50px; font-size:40px; font-family: Georgia;">Exclusive <span
+                        style="color: #fa7436; font-size: 40px;  font-family: Georgia ;">deals & discounts</span></h1>
+            </div>
+            <div>
+                <p
+                    style="  padding-top: 20px; color:  #666 ;font-family: Poppins;font-size: 1rem;font-style: normal;font-weight: 400;line-height: 1.25rem; max-width: 25rem;min-height: 3rem;text-align: center; width: 100%;">
+                    Discover our fantastic early booking discounts & start planning your journey </p>
+            </div>
+        </div>
+
+        <div style="background-color: #fff3ee; " class="thr-page">
+            <div class="thr-page-img">
+
+                <div style="height: auto; width: auto;" class="thr-down">
+                    <img src="image/Image.png" alt="madrid">
+
+                    <div class="thr-img-down">
+
+                        <div
+                            style="    align-items: center;display: flex; margin: 10px; max-width: 240px; flex-wrap: nowrap; ">
+                            <span>Madrid</span>
+
+
+                            <i style=" padding-left: 100px; color:gold; font-size: 15px;"
+                                class="fa-solid fa-star"></i><span style="color: #a5a5a5;">4.8</span>
+                        </div>
+                        <div
+                            style="    align-items: center;display: flex; margin: 10px; max-width: 240px; flex-wrap: nowrap; ">
+                            <i style="color: #a5a5a5;" class="fa-solid fa-location-dot"></i> <span
+                                style="color: #a5a5a5;">Spain</span>
+                            <span style="padding-left: 70px; text-decoration: line-through; color: #666;">$ 950</span>
+                            <span
+                                style="margin: 9px;  border-radius: 9px; color: #fa7436; background-color: #ffcab1;">$850</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="thr-page-img">
+                <div style="height: auto; width: auto;" class="thr-down">
+                    <img src="image/valy.png" alt="madrid">
+                    <div class="thr-img-down">
+                        <div
+                            style="    align-items: center;display: flex; margin: 10px; max-width: 240px; flex-wrap: nowrap; ">
+                            <span>Firenze</span><i style=" padding-left: 100px; color:gold; font-size: 15px;"
+                                class="fa-solid fa-star"></i><span style="color: #a5a5a5;">4.5</span>
+                        </div>
+                        <div
+                            style="    align-items: center;display: flex; margin: 10px; max-width: 240px; flex-wrap: nowrap; ">
+                            <i style="color: #a5a5a5;" class="fa-solid fa-location-dot"></i> <span
+                                style="color: #a5a5a5;">Italy</span>
+                            <span style="padding-left: 70px; text-decoration: line-through; color: #666;">$ 850</span>
+                            <span
+                                style="margin: 9px;  border-radius: 9px; color: #fa7436; background-color: #ffcab1;">$750</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="thr-page-img">
+                <div style="height: auto; width: auto;" class="thr-down"> <img src="image/light house.png" alt="madrid">
+
+                    <div class="thr-img-down">
+
+                        <div
+                            style="    align-items: center;display: flex; margin: 10px; max-width: 240px; flex-wrap: nowrap; ">
+                            <span>Paris</span>
+
+
+                            <i style=" padding-left: 100px; color:gold; font-size: 15px;"
+                                class="fa-solid fa-star"></i><span style="color: #a5a5a5;">4.4</span>
+                        </div>
+                        <div
+                            style="    align-items: center;display: flex; margin: 10px; max-width: 240px; flex-wrap: nowrap; ">
+                            <i style="color: #a5a5a5;" class="fa-solid fa-location-dot"></i> <span
+                                style="color: #a5a5a5;">France</span>
+                            <span style="padding-left: 70px; text-decoration: line-through; color: #666;">$699</span>
+                            <span
+                                style="margin: 9px;  border-radius: 9px; color: #fa7436; background-color: #ffcab1;">$599</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="thr-page-img">
+
+                <div style="height: auto; width: auto;" class="thr-down">
+                    <img src="image/Image (3).png" alt="madrid">
+                    <div class="thr-img-down">
+                        <div
+                            style="    align-items: center;display: flex; margin: 10px; max-width: 240px; flex-wrap: nowrap; ">
+                            <span>London</span><i style=" padding-left: 100px; color:gold; font-size: 15px;"
+                                class="fa-solid fa-star"></i><span style="color: #a5a5a5;">4.9</span>
+                        </div>
+                        <div
+                            style="    align-items: center;display: flex; margin: 10px; max-width: 240px; flex-wrap: nowrap; ">
+                            <i style="color: #a5a5a5;" class="fa-solid fa-location-dot"></i> <span
+                                style="color: #a5a5a5;">UK</span>
+                            <span style="padding-left: 70px; text-decoration: line-through; color: #666;">$ 850</span>
+                            <span
+                                style="margin: 9px;  border-radius: 9px; color: #fa7436; background-color: #ffcab1;">$750</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="display: flex; justify-content: center;  align-items: center; flex-direction: column;"
+            class="four-page">
+            <h1 id="tour" style=" padding-top: 50px; font-size:40px; font-family: Georgia;">Best <span
+                    style="  font-family: Georgia ; color: #fa7436; font-size: 40px;"> vacation plan <img
+                        src="image/Element (1).png" alt=""></span></h1>
+            <p
+                style="  padding-top: 20px; color:  #666 ;font-family: Poppins;font-size: 1rem;font-style: normal;font-weight: 400;line-height: 1.25rem; max-width: 25rem;min-height: 3rem;text-align: center; width: 100%;">
+                Plan your perfect vacation with our travel agency. Choose among hundreds of all-inclusive offers!</p>
+        </div>
+        <div style="margin-top: 50px; background-color: #ffeee6; display: flex; gap: 20px; justify-content: space-around; flex-wrap: wrap;"
+            class="four-page-img">
+            <div style="display: flex; flex-direction: column; align-items: center; max-width: 300px; background-color: white; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); overflow: hidden;"
+                class="thr-page-img">
+                <img style="width: 100%; height: auto;" src="image/Image (8).png" alt="London">
+                <div style="padding: 15px; display: flex; flex-direction: column; gap: 10px;">
+                    <div style="display: flex; align-items: center; justify-content: space-between;">
+                        <span>London,UK</span>
+                        <div style="display: flex; align-items: center; gap: 5px;">
+                            <i style="color: gold; font-size: 15px;" class="fa-solid fa-star"></i>
+                            <span style="color: #a5a5a5;">4.7</span>
+                        </div>
+                    </div>
+                    <div style="display: flex; align-items: center; justify-content: space-between;">
+                        <div style="display: flex; align-items: center; gap: 5px;">
+                            <i style="color: #a5a5a5;" class="fa-solid fa-location-dot"></i>
+                            <span style="color: #a5a5a5;">07 Days Trip </span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 10px;">
+                            <span
+                                style="border-radius: 5px; padding: 5px 10px; font-weight: bold; color: #fa7436;">$5,42K</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="display: flex; flex-direction: column; align-items: center; max-width: 300px; background-color: white; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); overflow: hidden;"
+                class="thr-page-img">
+                <img style="width: 100%; height: auto;" src="image/Image (6).png" alt="London">
+                <div style="padding: 15px; display: flex; flex-direction: column; gap: 10px;">
+                    <div style="display: flex; align-items: center; justify-content: space-between;">
+                        <span>Rome,italty</span>
+                        <div style="display: flex; align-items: center; gap: 5px;">
+                            <i style="color: gold; font-size: 15px;" class="fa-solid fa-star"></i>
+                            <span style="color: #a5a5a5;">4.8</span>
+                        </div>
+                    </div>
+                    <div style="display: flex; align-items: center; justify-content: space-between;">
+                        <div style="display: flex; align-items: center; gap: 5px;">
+                            <i style="color: #a5a5a5;" class="fa-solid fa-location-dot"></i>
+                            <span style="color: #a5a5a5;">10 days trip</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 10px;">
+
+                            <span
+                                style="border-radius: 5px; padding: 5px 10px; font-weight: bold; color: #fa7436;">$2,42K</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="display: flex; flex-direction: column; align-items: center; max-width: 300px; background-color: white; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); overflow: hidden;"
+                class="thr-page-img">
+                <img style="width: 100%; height: auto;" src="image/Image (5).png" alt="London">
+                <div style="padding: 15px; display: flex; flex-direction: column; gap: 10px;">
+                    <div style="display: flex; align-items: center; justify-content: space-between;">
+                        <span>Osaka,Japan</span>
+                        <div style="display: flex; align-items: center; gap: 5px;">
+                            <i style="color: gold; font-size: 15px;" class="fa-solid fa-star"></i>
+                            <span style="color: #a5a5a5;">4.9</span>
+                        </div>
+                    </div>
+                    <div style="display: flex; align-items: center; justify-content: space-between;">
+                        <div style="display: flex; align-items: center; gap: 5px;">
+                            <i style="color: #a5a5a5;" class="fa-solid fa-location-dot"></i>
+                            <span style="color: #a5a5a5;">10 days trip</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 10px;"> <span
+                                style="border-radius: 5px; padding: 5px 10px; font-weight: bold; color: #fa7436;">$5,42K</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <br><br><br>
+    <div style=" gap: 80px; padding-top:  50px; background-color : #ecf5ff; ; display: flex; justify-content: center; align-items: center; flex-direction: row;"
+        class="five-page">
+        <div style="height: 400px;" class="five-con">
+            <h1  id="about" style=" padding-top: 50px; font-size:40px; font-family: Georgia;">What People Say <span
+                    style="color: #fa7436; font-size: 40px;  font-family: Georgia ;">about us.</span></h1>
+            <p
+                style="  padding-top: 20px; color:  #666 ;font-family: Poppins;font-size: 1rem;font-style: normal;font-weight: 400;line-height: 1.25rem; max-width: 25rem;min-height: 3rem;text-align: center; width: 100%;">
+                Our Clients Send us bunch of smilies with our services and we love them.
+
+            </p>
+        </div>
+        <div class="five-img">
+            <img style="float: right; z-index: 2;" src="image/plan.png" alt="">
+            <img style="position: relative; z-index: 3; right: 20px;top: 20px;" src="image/Image (7).png" alt="">
+
+            <div
+                style=" position: relative; z-index: 2; background-color: white; width: 400px; height: 200px; border-radius: 8px;">
+                <br>
+                <p style=" padding-left: 15px;">"on the windows talking painted pasture yet its <br> express parties use
+                    . sure last upon he same as <br> knew next. of believed no."</p>
+            </div>
+            <div
+                style="  z-index: 1; position:relative; bottom: 130px; left: 30px; background-color: rgb(219, 243, 255); width: 400px; height: 200px; border-radius: 8px;">
+                <br>
+                <p style="padding-left: 35px; color: #a5a5a5; font-weight: bold; margin-top: 110px; "> Chris Thomas</p>
+                <p style="padding-left: 35px; color: #a5a5a5; font-size: 15px;">CEO of Red Botton</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="blog" style="display: flex;justify-content: center; align-items: center; background-color: #fff3ee; padding-top: 30px; padding-bottom: 20px;">
+        <h1  id="about" style=" padding-top: 50px; font-size:40px; font-family: Georgia;">Get update with<span
+            style="color: #fa7436; font-size: 40px;  font-family: Georgia ;">Latest Blog.</span></h1>
+
+    </div>
+    <div style="background-color: #fff3ee; " class="thr-page">
+        <div class="thr-page-img">
+
+            <div style="height: auto; width: auto;" class="thr-down">
+                <img src="image/Image (8).png" alt="madrid">
+                <div class="thr-img-down">
+                    <div
+                        style="   flex-direction: column; align-items: center;display: flex; margin: 10px; max-width: 240px; flex-wrap: nowrap; ">
+                        <h1>The Amazing Difference a year of Travelling.</h1> <span style="color: #a5a5a5;">July 27
+                            ,2021</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="thr-page-img">
+            <div style="height: auto; width: auto;" class="thr-down">
+                <img src="image/Image (9).png" alt="madrid">
+                <div class="thr-img-down">
+                    <div
+                        style="  flex-direction: column;  align-items: center;display: flex; margin: 10px; max-width: 240px; flex-wrap: nowrap; ">
+                        <h1>travel far enough,you meet yourself.</h1> <span style="color: #a5a5a5;">july 27 ,
+                            2021</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="thr-page-img">
+            <div style="height: auto; width: auto;" class="thr-down">
+                <img src="image/Image (10).png" alt="madrid">
+
+                <div class="thr-img-down">
+                    <div
+                        style="  flex-direction: column;  align-items: center;display: flex; margin: 10px; max-width: 240px; flex-wrap: nowrap; ">
+                        <h1>How to save Money While Visiting Africa.</h1>
+
+                        <span style="color: #a5a5a5;">July 27 , 2021</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="thr-page-img">
+            <div style="height: auto; width: auto;" class="thr-down">
+                <img src="image/Image (11).png" alt="madrid">
+                <div class="thr-img-down">
+                    <div
+                        style="  flex-direction: column;  align-items: center;display: flex; margin: 10px; max-width: 240px; flex-wrap: nowrap; ">
+                        <h1>reflections on 5 Months of Travel:Time to Hang</h1>
+                        <p style="color: #a5a5a5;">july 27 , 2021</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <Div style=" margin-top: 70px ; margin-bottom: 70px; display: flex; justify-content: center; align-items: center;"
+        class="final-one">
+        <div style="border-radius: 20px; background-color: #fa7436; width: 700px; height: 350px;">
+            <img style="float: right;" src="image/Element (1).png" alt="">
+
+            <span
+                style="color: white; font-size:30px ; display: flex;justify-content: center;align-items: center; font-family: Georgia, 'Times New Roman', Times, serif; position: absolute; ">Subscribe
+                and get exclusive deals & offer</span>
+
+            <img style="float:left ; position: relative; top: 80px; " src="image/Group 42.png" alt="">
+        </div>
+    </Div>
+    <footer class="footer">
+        <div class="footer__addr">
+            <h1 class="footer__logo">Trabook</h1><img src="image/Logo.png" class="footer__logo__img"
+                alt="Trabook`s logo" width="">
+            <address>Book your trip in minute, get full Control for much longer.</address><img
+                src="image/Social (3).png" class="footer__socials__img" alt="Facebook Logo"><img
+                src="image/Social (1).png" class="footer__socials__img" alt="Instagram logo"><img
+                src="image/Social (3).png" class="footer__socials__img" alt="Twitter logo">
+        </div>
+        <ul class="footer__nav">
+            <li class="nav__item">
+                <h2 class="nav__title"> Company </h2>
+                <ul class="nav__ul">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Logistic</a></li>
+                    <li><a href="#">Privacy &amp; Policy</a></li>
+                </ul>
+            </li>
+            <li class="nav__item">
+                <h2 class="nav__title"> Contact </h2>
+                <ul class="nav__ul">
+                    <li><a href="#">Help/FAQ</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">Affilates</a></li>
+                </ul>
+            </li>
+            <li class="nav__item">
+                <h2 class="nav__title">More</h2>
+                <ul class="nav__ul">
+                    <li><a href="#">Press Centre</a></li>
+                    <li><a href="#">Our Blog</a></li>
+                    <li><a href="#">Low fare tips</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="line"></div>
+        <div class="legal">
+            <p>© Copyright, Trabook 2022. All rights reserved.</p>
+            <div class="legal__links"><span>Terms &amp; Conditions</span></div>
+        </div>
+    </footer>
+    </div>
 </body>
 
-</html> 
-
+</html>
