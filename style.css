@@ -44,6 +44,25 @@
         overflow-x: hidden;
     }
 
+    .five-page{
+        
+        height: 1300px;
+        
+    }
+
+    .five-con{
+        text-align: center;
+        position: relative;
+        left: 200px;
+        bottom: 400px;
+    }
+
+    .five-img{
+        position: relative;
+        right: 100px;
+        top: 500px;
+    }
+
     .thr-page-img {
         display: flex;
         justify-content: space-around;
