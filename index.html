@@ -6,6 +6,414 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TraBook Travel Agency</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-family: "Afacad Flux", serif;
+    box-sizing: border-box;
+}
+
+
+@media screen and (min-width: 1320px) {
+    .main-screen {
+        padding: 0px 15%;
+    }
+}
+
+@media screen and (max-width: 1320px) {
+    .med {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        padding-bottom: 5rem;
+        overflow-x: hidden;
+    }
+
+    .med img {
+        width: 100%;
+        max-width: 450px;
+        margin-top: 20px;
+    }
+
+    .sec-page-img {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        padding-bottom: 5rem;
+        overflow-x: hidden;
+    }
+
+    .five-page{
+        
+        height: 1300px;
+        
+    }
+
+    .five-con{
+        text-align: center;
+        position: relative;
+        left: 200px;
+        bottom: 400px;
+    }
+
+    .five-img{
+        position: relative;
+        right: 100px;
+        top: 500px;
+    }
+
+    .thr-page-img {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        min-height: 350px;
+        width: 100%;
+        padding-bottom: 3rem;
+    }
+
+    .thr-page-img div {
+        width: 100%;
+        max-width: 300px;
+        margin: 10px;
+    }
+
+    .footer__logo__img {
+        width: 60px;
+    }
+
+    .footer__socials__img {
+        width: 30px;
+        height: 30px;
+        margin: 10px;
+    }
+
+    .footer__nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__nav .nav__item {
+        margin-bottom: 15px;
+    }
+
+    .nav-links li {
+        padding: 0 15px;
+    }
+
+    .sec-page-img div {
+        max-width: 290px;
+    }
+
+    .thr-down {
+        width: 100%;
+        max-width: 320px;
+    }
+    .thr-page {
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .thr-page-img {
+        flex: 1 1 100%;
+        min-width: 100%;
+    }
+}
+.thr-page {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.thr-page-img {
+    flex: 1 1 22%;
+    min-width: 280px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.med {
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav-links li a:hover {
+    border-radius: 25px;
+    background-color: #fa7436;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 8px;
+    color: wheat;
+    transition: 0.5s;
+}
+
+.nav-links li a {
+    transition: 0.5s;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.login {
+    padding: 0px 20px;
+    font-weight: bold;
+    color: #fa7436;
+}
+
+.login:hover {
+    border-radius: 20px;
+    background-color: #f19e78b2;
+    transition: 0.8s;
+    font-weight: bold;
+    padding: 0px 18px;
+    color: #fd5000;
+}
+
+.signup {
+    padding: 0px 20px;
+    font-weight: bold;
+    color: white;
+    background-color: #fa7436;
+    border-radius: 5px;
+}
+
+.signup:hover {
+    border-radius: 20px;
+    background-color: #f19e78b2;
+    transition: 0.8s;
+    font-weight: bold;
+    padding: 0px 20px;
+    color: #fd5000;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-color: transparent;
+    border-width: 1px;
+    border-radius: 15px;
+    border-style: outset;
+    padding: 7px;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 3rem;
+    box-shadow: 0 0 5px 2px #d4d7d7;
+}
+
+.search-box div {
+    margin: 10px;
+}
+
+.search-box input {
+    padding: 0px;
+    font-size: 16px;
+    border: 0px solid #ccc;
+    border-radius: 5px;
+}
+
+.sec-page {
+    display: flex;
+    justify-content: center;
+}
+
+.thr-page {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding-bottom: 5rem;
+    overflow-x: hidden;
+}
+
+#explore {
+    font-weight: 300;
+    padding: 10px;
+}
+
+.guest {
+    background: transparent;
+    border: 0px;
+    padding: 0px;
+    color: orange;
+}
+
+.footer img {
+    width: 80px;
+    height: auto;
+}
+
+.sec-page-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+    background-color: rgb(243, 243, 243);
+}
+
+.sec-page-img div {
+    background-color: white;
+    width: 100%;
+    max-width: 300px;
+    height: 250px;
+    border-radius: 9px;
+    margin: 50px;
+}
+
+.thr-page-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+    flex-basis: 20%;
+}
+
+.thr-down {
+    background-color: white;
+    width: 100%;
+    max-width: 300px;
+    height: 250px;
+    border-radius: 9px;
+    margin: 50px;
+}
+
+
+.footer {
+    background-color: #8393a2;
+    color: #ecf0f1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.footer__addr {
+    text-align: center;
+}
+
+.footer__logo {
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer__logo__img {
+    display: block;
+    margin: 10px auto;
+    width: 80px;
+    height: auto;
+}
+
+.footer__addr address {
+    font-style: normal;
+    margin: 10px 0;
+}
+
+.footer__socials__img {
+    width: 24px;
+    height: 24px;
+    margin: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.footer__socials__img:hover {
+    transform: scale(1.2);
+}
+
+.footer__nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 0;
+    list-style: none;
+}
+
+.nav__item {
+    text-align: center;
+}
+
+.nav__title {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.nav__ul {
+    list-style: none;
+    padding: 0;
+}
+
+.nav__ul li {
+    margin: 5px 0;
+}
+
+.nav__ul a {
+    color: #ecf0f1;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+.nav__ul a:hover {
+    color: #3498db;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    background-color: #7f8c8d;
+    margin: 20px 0;
+}
+
+.legal {
+    text-align: center;
+    font-size: 0.9em;
+}
+
+.legal__links span {
+    color: #ecf0f1;
+    cursor: pointer;
+    transition: color 0.2s ease-in-out;
+}
+
+.legal__links span:hover {
+    color: #3498db;
+}
+
+
+
+    </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -14,10 +422,10 @@
 <body>
     <div class="main-screen">
 
-        <header>
-            <img src="image/Logo.png" alt="Logo">
+        <header  >
+            <img style=" margin-top: 30px; margin-left: 20px;" src="image/Logo.png" alt="Logo">
             <nav>
-                <ul class="nav-links">
+                <ul style=" margin-top: 30px;" class="nav-links">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="#about">About </a></li>
                     <li><a href="#Destination">Destination</a></li>
@@ -25,7 +433,7 @@
                     <li><a href="#blog">Blog</a></li>
                 </ul>
             </nav>
-            <div class="nav-log">
+            <div  style=" margin-top: 30px;" class="nav-log">
                 <a href="login.html" class="login">Login</a>
                 <a href="signup.html" class="signup">Sign up</a>
 
@@ -69,7 +477,9 @@
                 <a id="explore" href="explorenow.html" target="_blank" class="signup">Explore Now</a>
             </div>
         </section>
-        <div style="padding-top: 50px; background-color: rgb(243, 243, 243);" class="sec-page">
+
+    </div>
+        <div style="padding-top: 50px; background-color: rgba(200, 231, 255, 0.255);" class="sec-page">
             <div>
 
                 <h1  style="font-size:40px; font-family: Georgia;">Things you Need <span
@@ -82,7 +492,7 @@
             </div>
             <div><img src="image/Element.png" alt=""></div>
         </div>
-        <div class="sec-page-img">
+        <div style="background-color: rgba(200, 231, 255, 0.255);" class="sec-page-img">
             <div>
                 <img style="padding-left: 20px; padding-top: 20px;" src="image/Group.png" alt="date">
                 <h1 style="padding-top: 50px;padding-left: 20px;">Sign up</h1>
@@ -118,7 +528,7 @@
             </div>
         </div>
 
-        <div style="background-color: #fff3ee; " class="thr-page">
+        <div style="background:linear-gradient(#fff,#fff3ee);padding: 0px 15%; " class="thr-page">
             <div class="thr-page-img">
 
                 <div style="height: auto; width: auto;" class="thr-down">
@@ -220,7 +630,7 @@
                 style="  padding-top: 20px; color:  #666 ;font-family: Poppins;font-size: 1rem;font-style: normal;font-weight: 400;line-height: 1.25rem; max-width: 25rem;min-height: 3rem;text-align: center; width: 100%;">
                 Plan your perfect vacation with our travel agency. Choose among hundreds of all-inclusive offers!</p>
         </div>
-        <div style="margin-top: 50px; background-color: #ffeee6; display: flex; gap: 20px; justify-content: space-around; flex-wrap: wrap;"
+        <div style="margin-top: 50px; padding: 80px 15% ; background:linear-gradient(#fff, #ffeee6)  ; display: flex; gap: 20px; justify-content: space-around; flex-wrap: wrap;"
             class="four-page-img">
             <div style="display: flex; flex-direction: column; align-items: center; max-width: 300px; background-color: white; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); overflow: hidden;"
                 class="thr-page-img">
@@ -292,11 +702,11 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div style=" gap: 80px; padding-top:  50px; background-color : #ecf5ff; ; display: flex; justify-content: center; align-items: center; flex-direction: row;"
+    
+    <div style=" gap: 150px; padding-top:  50px; background-color : #ecf5ff; ; display: flex; justify-content: center; align-items: center; flex-direction: row;"
         class="five-page">
         <div style="height: 400px;" class="five-con">
-            <h1  id="about" style=" padding-top: 50px; font-size:40px; font-family: Georgia;">What People Say <span
+            <h1  id="about" style=" padding-top: 50px; font-size:40px; font-family: Georgia;">What People Say <br><span
                     style="color: #fa7436; font-size: 40px;  font-family: Georgia ;">about us.</span></h1>
             <p
                 style="  padding-top: 20px; color:  #666 ;font-family: Poppins;font-size: 1rem;font-style: normal;font-weight: 400;line-height: 1.25rem; max-width: 25rem;min-height: 3rem;text-align: center; width: 100%;">
@@ -309,10 +719,10 @@
             <img style="position: relative; z-index: 3; right: 20px;top: 20px;" src="image/Image (7).png" alt="">
 
             <div
-                style=" position: relative; z-index: 2; background-color: white; width: 400px; height: 200px; border-radius: 8px;">
+                style=" position: relative; z-index: 2; background-color: white; width: 400px; height: 250px; border-radius: 8px;">
                 <br>
-                <p style=" padding-left: 15px;">"on the windows talking painted pasture yet its <br> express parties use
-                    . sure last upon he same as <br> knew next. of believed no."</p>
+                <p style=" padding-left: 15px;">"on the windows talking painted pasture yet its express parties use
+                    . sure last upon he same as  knew next. of believed no." <br><span> <h3 style="padding-left: 15px ; padding-top: 10px; " >Mike taylor</h3>  <p style=" padding-left: 15px ; color: #7f8c8d;  " > Lahor,pakistan </p>  </span> </p>
             </div>
             <div
                 style="  z-index: 1; position:relative; bottom: 130px; left: 30px; background-color: rgb(219, 243, 255); width: 400px; height: 200px; border-radius: 8px;">
@@ -323,12 +733,12 @@
         </div>
     </div>
 
-    <div id="blog" style="display: flex;justify-content: center; align-items: center; background-color: #fff3ee; padding-top: 30px; padding-bottom: 20px;">
+    <div id="blog" style="display: flex;justify-content: center; align-items: center; background-color: #fff; padding-top: 30px; padding-bottom: 20px;">
         <h1  id="about" style=" padding-top: 50px; font-size:40px; font-family: Georgia;">Get update with<span
             style="color: #fa7436; font-size: 40px;  font-family: Georgia ;">Latest Blog.</span></h1>
 
     </div>
-    <div style="background-color: #fff3ee; " class="thr-page">
+    <div style=" padding-left: 200px; padding-right: 200px; background-color: #fff; " class="thr-page">
         <div class="thr-page-img">
 
             <div style="height: auto; width: auto;" class="thr-down">
@@ -394,48 +804,39 @@
             <img style="float:left ; position: relative; top: 80px; " src="image/Group 42.png" alt="">
         </div>
     </Div>
-    <footer class="footer">
-        <div class="footer__addr">
-            <h1 class="footer__logo">Trabook</h1><img src="image/Logo.png" class="footer__logo__img"
-                alt="Trabook`s logo" width="">
-            <address>Book your trip in minute, get full Control for much longer.</address><img
-                src="image/Social (3).png" class="footer__socials__img" alt="Facebook Logo"><img
-                src="image/Social (1).png" class="footer__socials__img" alt="Instagram logo"><img
-                src="image/Social (3).png" class="footer__socials__img" alt="Twitter logo">
+    <footer style="background-color: #f8f9fc; padding: 60px 10%; font-family: Arial, sans-serif; font-size: 14px; color: #666;">
+        <div style="display: flex; justify-content: space-between; max-width: 1200px; margin: auto; flex-wrap: wrap;">
+            <div style="max-width: 300px;">
+                <h2 style="font-size: 22px; font-weight: bold; color: #000;"><img src="image/Logo.png" alt=""></h2>
+                <p style="line-height: 1.6;">Book your trip in minute, get full<br>Control for much longer.</p>
+                <div style="margin-top: 15px;">
+                    <span ><img src="image/Social (3).png" alt=""></span>
+                    <span ><img src="image/Social (1).png" alt=""> </span>
+                    <span ><img src="image/Social (2).png" alt=""></span>
+                </div>
+            </div>
+            <div>
+                <h3 style="font-size: 20px; font-weight: bold; color: #000;">Company</h3>
+                <p style="line-height: 2;">About<br>Careers<br>Logistic<br>Privacy & Policy</p>
+            </div>
+            <div>
+                <h3 style="font-size: 20px; font-weight: bold; color: #000;">Contact</h3>
+                <p style="line-height: 2;">Help/FAQ<br>Press<br>Affiliates</p>
+            </div>
+            <div>
+                <h3 style="font-size: 20px; font-weight: bold; color: #000;">More</h3>
+                <p style="line-height: 2;">Press Centre<br>Our Blog<br>Low fare tips</p>
+            </div>
         </div>
-        <ul class="footer__nav">
-            <li class="nav__item">
-                <h2 class="nav__title"> Company </h2>
-                <ul class="nav__ul">
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Careers</a></li>
-                    <li><a href="#">Logistic</a></li>
-                    <li><a href="#">Privacy &amp; Policy</a></li>
-                </ul>
-            </li>
-            <li class="nav__item">
-                <h2 class="nav__title"> Contact </h2>
-                <ul class="nav__ul">
-                    <li><a href="#">Help/FAQ</a></li>
-                    <li><a href="#">Press</a></li>
-                    <li><a href="#">Affilates</a></li>
-                </ul>
-            </li>
-            <li class="nav__item">
-                <h2 class="nav__title">More</h2>
-                <ul class="nav__ul">
-                    <li><a href="#">Press Centre</a></li>
-                    <li><a href="#">Our Blog</a></li>
-                    <li><a href="#">Low fare tips</a></li>
-                </ul>
-            </li>
-        </ul>
-        <div class="line"></div>
-        <div class="legal">
-            <p>© Copyright, Trabook 2022. All rights reserved.</p>
-            <div class="legal__links"><span>Terms &amp; Conditions</span></div>
+        <hr style="margin: 30px 0; border: 0; border-top: 1px solid #ddd;">
+        <div style="display: flex; justify-content: space-between; max-width: 1200px; margin: auto; font-size: 13px;">
+            <p>Copyright, Trabook 2022. All rights reserved.</p>
+            <p><a href="#" style="color: #666; text-decoration: none;">Terms & Conditions</a></p>
         </div>
     </footer>
+    
+    
+    
     </div>
 </body>
 
